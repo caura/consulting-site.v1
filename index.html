@@ -33,16 +33,12 @@
                 <div class="col-lg-5">
                   <section class="navbar-mobile">
                   <ul class="nav nav-navbar w-100">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
-                    </li>
-
                     <li class="nav-item nav-mega">
-                      <a class="nav-link" href="#">Mega menu <span class="arrow"></span></a>
+                      <a class="nav-link" href="#">Use Cases <span class="arrow"></span></a>
                       <nav class="nav p-4">
                         <div class="row">
                           <div class="col-lg-4">
-                            <h6>Mega Menu</h6>
+                            <h6>Use Cases</h6>
                             <p class="small-2 mb-0">This is a menu-wide mega menu. You can use the Bootstrap grid system to split your content and put any type of content inside them.</p>
                           </div>
 
@@ -59,7 +55,7 @@
                             <h6>Pages</h6>
                             <nav class="nav flex-column">
                               <a class="nav-link" href="#">Portfolio</a>
-                              <a class="nav-link" href="#">Pricing</a>
+                              <a class="nav-link" href="#pricing">Pricing</a>
                               <a class="nav-link" href="#">Login</a>
                             </nav>
                           </div>
@@ -79,11 +75,14 @@
                     </li>
 
                     <li class="nav-item nav-mega">
-                      <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#chat">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                   </ul>
                 </section>
@@ -98,7 +97,7 @@
                 </div>
 
                 <div class="col-7 col-lg-5 text-right">
-                  <a class="btn btn-sm btn-round btn-outline-success" href="#">Ask Us</a>
+                  <a class="btn btn-sm btn-round btn-outline-success" href="#" onclick="olark('api.box.expand')">Ask Us</a>
                 </div>
 
               </div>
@@ -467,7 +466,7 @@
         </div>
       </section>
       <!-- http://thetheme.io/thesaas/block/pricing.html -->
-      <section class="section bg-gray">
+      <section class="section bg-gray" id="pricing">
         <div class="container">
           <div class="row align-items-center">
 
@@ -510,7 +509,7 @@
       </section>
 
       <!-- http://thetheme.io/thesaas/block/faq.html -->
-      <section class="section">
+      <section class="section" id="faq">
         <div class="container">
           <header class="section-header">
             <small>FAQ</small>
@@ -566,7 +565,7 @@
       </section>
 
             <!-- http://thetheme.io/thesaas/block/cta.html -->
-      <!--<section class="section bg-repeat" style="background-image: url(ssets/img/bg/pattern-1.png)" data-overlay-light="5">
+      <!--<section class="section bg-repeat" style="background-image: url(ssets/img/bg/pattern-1.png)" data-overlay-light="5" id="chat">
         <div class="container">
           <header class="section-header">
             <small>Kick Off a Project!</small>
@@ -581,12 +580,12 @@
           </p>
         </div>
       </section>-->
-      <section class="section text-center">
+      <section class="section text-center" id="chat">
         <div class="container">
           <h2 class="mb-6"><strong>Kick Off a Project</strong></h2>
           <p class="lead text-muted">Describe your project and what your goals are. Engagement calls are free!</p>
           <hr class="w-5 my-7">
-          <a class="btn btn-lg btn-round btn-info" href="#">Solve IT now</a>
+          <a class="btn btn-lg btn-round btn-info" href="#" onclick="olark('api.box.expand')">Solve IT now</a>
         </div>
       </section>
     </main>
@@ -603,10 +602,8 @@
 
             <div class="col-md-6">
               <div class="nav nav-center">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="privacy.html">Policy</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="https://www.caura.co" target="_blank">A Caura & Co. Company</a>
+                <a class="nav-link" href="privacy.html" target="_blank">Policy</a>
               </div>
             </div>
 
@@ -621,7 +618,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/page.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js?version=1"></script>
 
   </body>
 </html>
