@@ -158,6 +158,7 @@ $(function() {
           __adroll.record_user({"adroll_segments": "0e317ec5"})
         } catch(err) {}
       },false);
+  }
   if (page.defaults.facebook){
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
