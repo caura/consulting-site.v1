@@ -146,18 +146,20 @@ $(function() {
         ((document.getElementsByTagName('head') || [null])[0] ||
             document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
     }());
-    $( '#chat-start1' ).addEventListener('click',
-      function(){
-        try{
-          __adroll.record_user({"adroll_segments": "0e317ec5"})
-        } catch(err) {}
-      },false);
-    $( '#chat-start2' ).addEventListener('click',
-      function(){
-        try{
-          __adroll.record_user({"adroll_segments": "0e317ec5"})
-        } catch(err) {}
-      },false);
+    $( document ).ready(function() {
+      $( '#chat-start1' ).on("mousedown",
+        function(){
+          try{
+            __adroll.record_user({"adroll_segments": "0e317ec5"})
+          } catch(err) {}
+        });
+      $( '#chat-start2' ).on("mousedown",
+        function(){
+          try{
+            __adroll.record_user({"adroll_segments": "0e317ec5"})
+          } catch(err) {}
+        });
+    });
   }
   if (page.defaults.facebook){
     !function(f,b,e,v,n,t,s)
@@ -170,19 +172,30 @@ $(function() {
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', page.defaults.facebook);
     fbq('track', 'PageView');
-    $( '#chat-start1' ).click(function() {
-      fbq('track', 'InitiateCheckout', {
-        value: 1,
+    $( document ).ready(function() {
+      var tracked = false;
+      $( '#chat-start1' ).on("mousedown", function(){
+        if (!tracked){
+          tracked = true;
+          fbq('track', 'InitiateCheckout', {
+            value: 1,
+          });
+        }
       });
-    });
-    $( '#chat-start2' ).click(function() {
-      fbq('track', 'InitiateCheckout', {
-        value: 1,
+      $( '#chat-start2' ).on("mousedown", function(){
+        if (!tracked){
+          tracked = true;
+          fbq('track', 'InitiateCheckout', {
+            value: 1,
+          });
+        }
       });
-    });
-    $( '#contact-slide' ).click(function() {
-      fbq('track', 'InitiateCheckout', {
-        value: 0.5,
+      $( '#contact-slide' ).on("mousedown", function(){
+        if (!tracked){
+          fbq('track', 'InitiateCheckout', {
+            value: 0.5,
+          });
+        }
       });
     });
   }
