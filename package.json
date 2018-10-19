@@ -1,0 +1,23 @@
+{
+  "name": "TheSaaS",
+  "version": "0.0.1",
+  "description": "Responsive Bootstrap 4 SaaS, Software & WebApp Template",
+  "private": true,
+  "keywords": [
+    "landing",
+    "startup",
+    "webapp",
+    "saas"
+  ],
+  "author": "TheThemeio",
+  "homepage": "http://thetheme.io/thesaas",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  }
+  ,"scripts": {
+    "build": "mustache ../templates/saas_analytics.json index.mustache > d/index.html && mustache ../templates/saas_ops.json index.mustache > o/index.html"
+  }
+}
+
