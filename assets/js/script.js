@@ -86,6 +86,7 @@ $(function() {
     adroll_adv_id: "PX5LOK26DBF3PIIEMKIX5L",
     adroll_pix_id: "XWPWGN7J5NE4BEPJWKZMOD",
     facebook: "1972078333040303",
+    quora: "75c9068d8bad4384964e471ca3905245",
     heap: "4100355916"
 
   });
@@ -104,7 +105,11 @@ $(function() {
   | them in this file.
   |
   */
-
+  if (page.defaults.quora){
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', page.defaults.quora);
+    qp('track', 'ViewContent');
+  }
   if (page.defaults.driftAppId){
     !function() {
       var t = window.driftt = window.drift = window.driftt || [];

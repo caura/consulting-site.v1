@@ -4396,7 +4396,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: #f1f2f3; }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4416,7 +4416,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: #f1f2f3; }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4433,7 +4433,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: #f1f2f3; }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4462,7 +4462,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: #f1f2f3; }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -13622,7 +13622,7 @@ you can use the generic selector below, but it's slower:
 
 */
 /*
-	
+
 	1. Buttons
 
  */
@@ -13867,7 +13867,7 @@ a.pswp__share--download:hover {
   padding: 0 10px; }
 
 /*
-	
+
 	4. Caption
 
  */
@@ -13948,8 +13948,8 @@ a.pswp__share--download:hover {
   margin: 0; }
 
 .pswp--css_animation .pswp__preloader__cut {
-  /* 
-			The idea of animating inner circle is based on Polymer ("material") loading indicator 
+  /*
+			The idea of animating inner circle is based on Polymer ("material") loading indicator
 			 by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
 		*/
   position: relative;
@@ -14019,7 +14019,7 @@ a.pswp__share--download:hover {
             transform: rotate(0); } }
 
 /*
-	
+
 	6. Additional styles
 
  */
@@ -19520,7 +19520,7 @@ body:not(.body-scrolled) .topbar.d-flex ~ .navbar {
           background-size: cover;
   background-repeat: no-repeat;
   padding-top: 7rem;
-  padding-bottom: 7rem; }
+  /*padding-bottom: 7rem; */}
   .section > .container,
   .section > .container-fluid,
   .section > .container-wide {
