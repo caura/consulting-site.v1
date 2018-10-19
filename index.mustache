@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="saas,data analytics,data engineering,data architecture,data vendor,data consulting,big data consulting,subscription-based services,talent on demand,top tallent">
 
-    <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
+    <title>{{meta.title}}</title>
 
     <!-- Styles -->
     <link href="../assets/css/page.min.css" rel="stylesheet">
@@ -17,8 +17,8 @@
     <link rel="icon" href="../assets/img/favicon.png">
 
     <!--  Open Graph Tags -->
-    <meta property="og:title" content="TheSaaS">
-    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:description" content="{{meta.description}}">
     <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
     <meta property="og:url" content="http://thetheme.io/thesaas/">
     <meta name="twitter:card" content="summary_large_image">
@@ -62,7 +62,7 @@
                           </div>
 
                           <div class="col-lg-4">
-                            <h6>Featured Consultant</h6>
+                            <h6>Featured Advisors</h6>
                             <div class="media align-items-center mt-5">
                               <img class="avatar avatar-sm mr-3" src="../assets/img/avatar/profile.jpeg" alt="icon">
                               <div class="media-body lh-1">
@@ -146,7 +146,7 @@
       <section class="section">
         <div class="container">
           <header class="section-header">
-            <h2>{{{ headline }}}</h2>
+            <h2>Do <b><u>B</u></b>etter, <b><u>E</u></b>fficiently, <b><u>E</u></b>ffectively, <b><u>F</u></b>aster (<b>BEEF</b>)</h2>
             <hr>
             <p class="lead">{{ description }}</p>
           </header>
@@ -228,10 +228,10 @@
           <div class="row gap-y align-items-center">
 
             <div class="col-md-6 text-center text-md-right">
-              <p class="small-2 text-uppercase text-lightest fw-500 ls-1">Use Cases</p>
+              <p class="small-2 text-uppercase text-lightest fw-500 ls-1">Where is the <b>Beef</b>?</p>
               <h3 class="fw-500">{{usecase1.title}}</h3>
               <br>
-              <p>{{usecase1.content}}</p>
+              <p>{{{usecase1.content}}}</p>
             </div>
 
             <div class="col-md-6">
@@ -249,19 +249,19 @@
 
             <div class="col-md-6 align-self-center pb-7">
               <h3>{{usecase2.title}}</h3>
-              <p>{{usecase2.content}}</p>
+              <p>{{{usecase2.content}}}</p>
 
               <div class="row mt-7">
                 <div class="col-6">
                   <!-- <p class="text-warning lead-5"><i class="fa fa-tv"></i></p> -->
                   <h5>{{usecase2.subsection1.title}}</h5>
-                  <p>{{usecase2.subsection1.content}}</p>
+                  <p>{{{usecase2.subsection1.content}}}</p>
                 </div>
 
                 <div class="col-6">
                   <!-- <p class="text-warning lead-5"><i class="fa fa-code"></i></p> -->
                   <h5>{{usecase2.subsection2.title}}</h5>
-                  <p>{{usecase2.subsection2.content}}</p>
+                  <p>{{{usecase2.subsection2.content}}}</p>
                 </div>
               </div>
             </div>
@@ -316,7 +316,7 @@
       <section class="section">
         <div class="container">
           <header class="section-header">
-            <small>What We Do?</small>
+            <small>What it is in our <b>Beef</b>?</small>
             <h2>{{generic.header}}</h2>
             <hr>
             <p class="lead">{{generic.description}}</p>
@@ -528,6 +528,8 @@
           <hr class="w-5 my-7">
           <a id="chat-start2" class="btn btn-lg btn-round btn-info" href="#" onclick="olark('api.box.expand')">Solve IT now</a>
         </div>
+        <br/>
+        <br/>
       </section>
     </main>
 
