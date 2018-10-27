@@ -23,6 +23,9 @@
     <meta property="og:url" content="http://thetheme.io/thesaas/">
     <meta name="twitter:card" content="summary_large_image">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--custom icon additions-->
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -38,39 +41,28 @@
                       <a class="nav-link" href="#">Use Cases <span class="arrow"></span></a>
                       <nav class="nav p-4">
                         <div class="row">
-                          <div class="col-lg-4">
+                          <div class="col-lg-5">
                             <h6>Use Cases</h6>
-                            <p class="small-2 mb-0">This is a menu-wide mega menu. You can use the Bootstrap grid system to split your content and put any type of content inside them.</p>
+                            <p class="small-2 mb-0">On-demand, RFP-less, no strings attached - these are our key qualities. Learn here the type of work we do (<a href="#use-case1"><u>the what</u></a>) and <a href="#how1"><u>how we</u></a> do it.</p>
                           </div>
 
-                          <div class="col-lg-2">
-                            <h6>Blocks</h6>
+                          <div class="col-lg-7">
+                            <h6>Our Beef</h6>
                             <nav class="nav flex-column">
-                              <a class="nav-link" href="#">Cover</a>
-                              <a class="nav-link" href="#">Features</a>
-                              <a class="nav-link" href="#">Subscribe</a>
+                              <a class="nav-link" href="#use-case1">{{audience_specific.usecase1.short}}</a>
+                              <a class="nav-link" href="#use-case2">{{audience_specific.usecase2.short}}</a>
+                              <a class="nav-link" href="#use-case3">{{audience_specific.usecase3.short}}</a>
                             </nav>
                           </div>
 
-                          <div class="col-lg-2">
-                            <h6>Pages</h6>
+                          <!--<div class="col-lg-4">
+                            <h6>Our Sauce</h6>
                             <nav class="nav flex-column">
-                              <a class="nav-link" href="#">Portfolio</a>
-                              <a class="nav-link" href="#pricing">Pricing</a>
-                              <a class="nav-link" href="#">Login</a>
+                              <a class="nav-link" href="#how1">{{generic.resource0.short}}</a>
+                              <a class="nav-link" href="#how2">{{generic.resource1.short}}</a>
+                              <a class="nav-link" href="#how3">{{generic.resource2.short}}</a>
                             </nav>
-                          </div>
-
-                          <div class="col-lg-4">
-                            <h6>Featured Advisors</h6>
-                            <div class="media align-items-center mt-5">
-                              <img class="avatar avatar-sm mr-3" src="../assets/img/avatar/profile.jpeg" alt="icon">
-                              <div class="media-body lh-1">
-                                <div class="fw-600 mb-2">Segah Mir</div>
-                                <!-- <small class="text-muted">@</small> -->
-                              </div>
-                            </div>
-                          </div>
+                          </div>-->
                         </div>
                       </nav>
                     </li>
@@ -223,7 +215,7 @@
       </section>
             <!-- Use Case 1 -->
       <!-- http://thetheme.io/thesaas/block/content.html -->
-      <section class="section">
+      <section class="section" id="use-case1">
         <div class="container">
           <div class="row gap-y align-items-center">
 
@@ -243,7 +235,7 @@
       </section>
       <!-- Use Case 2 -->
       <!-- http://thetheme.io/thesaas/block/feature.html -->
-      <section class="section bg-gray pb-0">
+      <section class="section bg-gray pb-0" id="use-case2">
         <div class="container">
           <div class="row">
 
@@ -276,7 +268,7 @@
       </section>
       <!-- Use Case 3 -->
       <!-- http://thetheme.io/thesaas/block/feature.html -->
-      <section class="section overflow-hidden">
+      <section class="section overflow-hidden" id="use-case3">
         <div class="container-fluid">
           <div class="row gap-y align-items-center">
 
@@ -311,57 +303,104 @@
         </div>
       </section>
       {{ /audience_specific }}
+      <section class="section text-white" style="background-color: #363636">
+        <div class="container">
+          <div class="row gap-y">
+
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="54"></h4>
+                </div>
+
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Months Operational</p>
+                  <p><i class="icon-briefcase lead-4 mb-0"></i></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="85"></h4>
+                </div>
+
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Customers</p>
+                  <p><i class="icon-profile-male lead-4 mb-0"></i></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="98" data-suffix="%"></h4>
+                </div>
+
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Satisfaction</p>
+                  <p><i class="icon-happy lead-4 mb-0"></i></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <!-- Use Case 4,5,6 -->
       <!-- http://thetheme.io/thesaas/block/feature.html -->
+      {{ #generic }}
       <section class="section">
         <div class="container">
           <header class="section-header">
-            <small>What it is in our <b>Beef</b>?</small>
-            <h2>{{generic.header}}</h2>
+            <small>What are we about?</small>
+            <h2>{{header}}</h2>
             <hr>
-            <p class="lead">{{generic.description}}</p>
+            <p class="lead">{{description}}</p>
           </header>
+          <div class="row align-items-center">
 
 
-          <div class="row gap-y align-items-center">
-            <div class="col-md-6 ml-auto">
-              <h4>{{generic.resource0.title}}</h4>
-              <p>{{generic.resource0.content}}</p>
+
+            <div class="col-md-6">
+              <ol class="step">
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">&#x2714;</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>{{resource0.title}}</strong></h6>
+                    <p>{{{resource0.content}}}</p>
+                  </div>
+                </li>
+
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">&#x2714;</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>{{resource1.title}}</strong></h6>
+                    <p>{{{resource1.content}}}</p>
+                  </div>
+                </li>
+
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">&#x2714;</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>{{resource2.title}}</strong></h6>
+                    <p>{{{resource2.content}}}</p>
+                  </div>
+                </li>
+              </ol>
             </div>
 
-            <div class="col-md-5 order-md-first">
-              <img class="rounded shadow-2" src="{{generic.resource0.img}}" alt="...">
-            </div>
-          </div>
-
-
-          <hr class="my-8">
-
-
-          <div class="row gap-y align-items-center">
-            <div class="col-md-6 mr-auto">
-              <h4>{{generic.resource1.title}}</h4>
-              <p>{{generic.resource1.content}}</p>
-            </div>
-
-            <div class="col-md-5">
-              <img class="rounded shadow-2" src="generic.resource1.img" alt="...">
-            </div>
-          </div>
-
-
-          <hr class="my-8">
-
-
-          <div class="row gap-y align-items-center">
-            <div class="col-md-6 ml-auto">
-              <h4>{{generic.resource2.title}}</h4>
-              <p>{{generic.resource2.content}}</p>
-            </div>
-
-            <div class="col-md-5 order-md-first">
-              <img class="rounded shadow-2" src="{{generic.resource2.img}}" alt="...">
-            </div>
           </div>
 
 
@@ -406,6 +445,7 @@
 
         </div>
       </section>
+      {{ /generic }}
       <!-- http://thetheme.io/thesaas/block/pricing.html -->
       <section class="section bg-gray" id="pricing">
         <div class="container">
@@ -414,7 +454,7 @@
             <div class="col-md-6">
               <p class="text-uppercase text-lighter fw-400 ls-2">Pricing plans</p>
               <h2 class="fw-200 mb-6">Choose your pricing plan,<br>No hidden fees!</h2>
-              <p>We have a single plan which you can choose to pay monthly or yearly. You can always cancel your subscription anytime from your account.</p>
+              <p>We have a single plan which you can choose to pay monthly or yearly. You can always cancel your subscription anytime.</p>
 
               <div class="btn-group btn-group-toggle mt-7" data-toggle="buttons">
                 <label class="btn btn-round btn-outline-dark w-150 active">
@@ -431,16 +471,15 @@
               <div class="card card-body text-center shadow-2 hover-shadow-8 py-6">
                 <p class="lead text-dark text-uppercase fw-600 ls-1 mb-0">Starter</p>
                 <p class="text-lighter"><span data-bind-radio="pricing-5" data-monthly="Monthly" data-yearly="Yearly">Monthly</span> Package</p>
-                <p class="lead-7 fw-600 text-dark"><span data-bind-radio="pricing-5" data-monthly="$4,500" data-yearly="$36,000">$3,000</span><span class="lead-4 align-text-top"></span></p>
+                <p class="lead-7 fw-600 text-dark"><span data-bind-radio="pricing-5" data-monthly="$3,500" data-yearly="$36,000">$3,000</span><span class="lead-4 align-text-top"></span></p>
                 <p>
-                  Single Website<br>
-                  60GB Bandwidth<br>
-                  Manual Import<br>
-                  No Support<br>
+                  Single Expertize<br>
+                  Support for Projects<br>
+                  Adhoc Support<br>
                 </p>
                 <br>
                 <div>
-                  <a class="btn btn-round btn-outline-secondary w-200" href="#monthly" data-bind-href="pricing-5" data-monthly="#monthly" data-yearly="#yearly">Sign up</a>
+                  <a class="btn btn-round btn-outline-secondary w-200" href="#" data-bind-href="pricing-5" onclick="olark('api.box.expand')">Sign up</a>
                 </div>
               </div>
             </div>
@@ -545,8 +584,8 @@
 
             <div class="col-md-6">
               <div class="nav nav-center">
-                <a class="nav-link" href="https://www.caura.co" target="_blank">A Caura & Co. Company</a>
-                <a class="nav-link" href="privacy.html" target="_blank">Policy</a>
+                <a class="nav-link" href="https://www.caura.co" target="_blank">Caura & Co. Company</a>
+                <a class="nav-link" href="/privacy.html" target="_blank">Policy</a>
               </div>
             </div>
 
