@@ -1,5 +1,32 @@
-{{> header-top}}
-{{> header-sub}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full-range data services for established SaaS organizations">
+    <meta name="keywords" content="saas,data analytics,data engineering,data architecture,data vendor,data consulting,big data consulting,subscription-based services,talent on demand,top tallent">
+
+    <title>Full-range data services for established SaaS organizations</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="Full-range data services for established SaaS organizations">
+    <meta property="og:description" content="Full-range data services for established SaaS organizations">
+    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+    <meta property="og:url" content="http://thetheme.io/thesaas/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--custom icon additions-->
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+  </head>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark">
             <div class="container">
@@ -20,18 +47,18 @@
                           <div class="col-lg-7">
                             <h6>Our Beef</h6>
                             <nav class="nav flex-column">
-                              <a class="nav-link" href="#use-case1">{{audience_specific.usecase1.short}}</a>
-                              <a class="nav-link" href="#use-case2">{{audience_specific.usecase2.short}}</a>
-                              <a class="nav-link" href="#use-case3">{{audience_specific.usecase3.short}}</a>
+                              <a class="nav-link" href="#use-case1">Funnels</a>
+                              <a class="nav-link" href="#use-case2">Performance</a>
+                              <a class="nav-link" href="#use-case3">Measuring</a>
                             </nav>
                           </div>
 
                           <div class="col-lg-4">
                             <h6>Our Sauce</h6>
                             <nav class="nav flex-column">
-                              <a class="nav-link" href="#how1">{{generic.resource0.short}}</a>
-                              <a class="nav-link" href="#how2">{{generic.resource1.short}}</a>
-                              <a class="nav-link" href="#how3">{{generic.resource2.short}}</a>
+                              <a class="nav-link" href="#how1">Client Types</a>
+                              <a class="nav-link" href="#how2">On automation</a>
+                              <a class="nav-link" href="#how3">Time-to-Value</a>
                             </nav>
                           </div>
                         </div>
@@ -52,7 +79,7 @@
                 </section>
                 </div>
 
-                <div class="col-5 col-lg-4 text-lg-center">
+                <div class="col-5 col-lg-2 text-lg-center">
                   <button class="navbar-toggler" type="button">☰</button>
                   <a class="navbar-brand" href="#">
                     <img class="logo-dark" src="../assets/img/logo-dark.png" alt="logo">
@@ -60,7 +87,7 @@
                   </a>
                 </div>
 
-                <div class="col-7 col-lg-3 text-right">
+                <div class="col-7 col-lg-5 text-right">
                   <a id="chat-start1" class="btn btn-sm btn-round btn-outline-success" href="#" onclick="olark('api.box.expand')">Ask Us</a>
                 </div>
 
@@ -105,33 +132,100 @@
       !-->
       <!-- Use Cases Summarized -->
       <!-- http://thetheme.io/thesaas/block/content.html -->
-      {{ #audience_specific }}
       <section class="section">
         <div class="container">
           <header class="section-header">
             <h2>Do <b><u>B</u></b>etter, <b><u>E</u></b>fficiently, <b><u>E</u></b>ffectively, <b><u>F</u></b>aster (<b>BEEF</b>)</h2>
             <hr>
-            <p class="lead">{{ description }}</p>
+            <p class="lead">Growing a software subscription business requires  smart acquisition of leads, even better conversion of opportunities, and a stellar retention of existing customer - however you look at it, that&#39;s a lot of work for a data team. Let us help you!</p>
           </header>
 
 
           <div class="row gap-y">
-            {{ #value_statements }}
             <div class="col-md-6 col-xl-4">
               <div class="media">
                 <div class="mr-5">
                   <!-- bg-pale-secondary text-muted -->
                   <!-- bg-pale-info text-info -->
                   <!-- bg-pale-success text-success -->
-                  <span class="iconbox iconbox-lg {{ #primary }} bg-pale-primary text-primary {{ /primary }}{{ #success }} bg-pale-success text-success {{ /success }}{{ #muted }} bg-pale-secondary text-muted {{ /muted }}{{ #info }} bg-pale-info text-info {{ /info }}"><i class="{{ icon }}"></i></span>
+                  <span class="iconbox iconbox-lg  bg-pale-primary text-primary "><i class="fas fa-barcode"></i></span>
                 </div>
                 <div class="media-body">
-                  <h6>{{ title }} </h6>
-                  <p>{{ content }}</p>
+                  <h6>Improved Accuracy </h6>
+                  <p>Analysis and Operationalization of Data is better done accurately on the first try. Make use of our experience - step up on your data maturity curve. Gain access to a unified view of customer activity across channels, devices, and platforms (360 view). Standardize that data across disparate sources on a scalable, repeatable basis. Finally, improve integration between your data warehouse, a BI platform, and other data apps.</p>
                 </div>
               </div>
             </div>
-            {{ /value_statements }}
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="mr-5">
+                  <!-- bg-pale-secondary text-muted -->
+                  <!-- bg-pale-info text-info -->
+                  <!-- bg-pale-success text-success -->
+                  <span class="iconbox iconbox-lg  bg-pale-info text-info "><i class="fas fa-cogs"></i></span>
+                </div>
+                <div class="media-body">
+                  <h6>Data Automation </h6>
+                  <p>Whether you use open source tools or software vendors we will come in with a ready implementation plan to help your data team spend more time providing insights to the rest of the organization and less time managing and maintaining existing processes. Let us map and harmonize existing channels of data into automated processes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="mr-5">
+                  <!-- bg-pale-secondary text-muted -->
+                  <!-- bg-pale-info text-info -->
+                  <!-- bg-pale-success text-success -->
+                  <span class="iconbox iconbox-lg  bg-pale-primary text-primary "><i class="fab fa-cloudversify"></i></span>
+                </div>
+                <div class="media-body">
+                  <h6>Insights-No Magic </h6>
+                  <p>Not just grunt work but our work &quot;ain&#39;t magic&quot;. We don&#39;t promise magical insights. We know predictive data science, we understand how to use R in a multi-cluster distributed environment and all that other fancy stuff. We will help you implement the latest &quot;AI&quot; tech stack if needed. But we don&#39;t deliver magic!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="mr-5">
+                  <!-- bg-pale-secondary text-muted -->
+                  <!-- bg-pale-info text-info -->
+                  <!-- bg-pale-success text-success -->
+                  <span class="iconbox iconbox-lg  bg-pale-success text-success "><i class="fas fa-handshake"></i></span>
+                </div>
+                <div class="media-body">
+                  <h6>Happy Team(s) </h6>
+                  <p>Improve internal customer and stakeholder management. Keep existing practices of flexible and ad-hoc reporting, but let us create workflows to help you deliver world-class experience to the rest of the organization. Ensure control, consistency, trust, and flexibility to answer any question--all while maintaining a high level of service for your internal data consumers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="mr-5">
+                  <!-- bg-pale-secondary text-muted -->
+                  <!-- bg-pale-info text-info -->
+                  <!-- bg-pale-success text-success -->
+                  <span class="iconbox iconbox-lg  bg-pale-primary text-primary "><i class="far fa-clock"></i></span>
+                </div>
+                <div class="media-body">
+                  <h6>Improved Time Allocation </h6>
+                  <p>Spend less time on data engineering and more on insight discovery and application. Free your data science and BI teams to do their best work. Let us handle your data pipelines, data modeling, and ETL. Your strategic differentiation does not lie in that work.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="mr-5">
+                  <!-- bg-pale-secondary text-muted -->
+                  <!-- bg-pale-info text-info -->
+                  <!-- bg-pale-success text-success -->
+                  <span class="iconbox iconbox-lg  bg-pale-secondary text-muted "><i class="fas fa-dollar-sign"></i></span>
+                </div>
+                <div class="media-body">
+                  <h6>Max(Value to Cost) </h6>
+                  <p>Avoid conducting lengthy RFP sessions towards, frequently, unrealistic goals. Engage us with via a low commitment monthly subscription and begin experiencing value immediately within the first few weeks. Adjust with us your requirements as your internal requirements change. Guide development and analytics on demand towards where your team sees real value.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
 
@@ -192,13 +286,13 @@
 
             <div class="col-md-6 text-center text-md-right">
               <p class="small-2 text-uppercase text-lightest fw-500 ls-1">Where is the <b>Beef</b>?</p>
-              <h3 class="fw-500">{{usecase1.title}}</h3>
+              <h3 class="fw-500">Building Funnels with Salesforce, Hubspot, and Looker</h3>
               <br>
-              <p>{{{usecase1.content}}}</p>
+              <p>Experience shows that every sales organization relies on unique definitions for operating its business. When working with sales data, we've learned to look beyond simple de-duping, cleaning, or updating. Instead, we bring multiple 3rd party data sources using our own best practices--reconciling raw data warehouses against top-level sales metrics. We've done these at many companies, including: <b>Gigster</b> and <b>RealSelf</b></p>
             </div>
 
             <div class="col-md-6">
-              <img class="rounded-md ml-md-4" src="{{usecase1.img}}" alt="...">
+              <img class="rounded-md ml-md-4" src="..&#x2F;assets&#x2F;img&#x2F;cases&#x2F;funnel.png" alt="...">
             </div>
 
           </div>
@@ -211,25 +305,25 @@
           <div class="row">
 
             <div class="col-md-6 align-self-center pb-7">
-              <h3>{{usecase2.title}}</h3>
-              <p>{{{usecase2.content}}}</p>
+              <h3></h3>
+              <p></p>
 
               <div class="row mt-7">
                 <div class="col-6">
-                  <h5>{{usecase2.subsection1.title}}</h5>
-                  <p>{{{usecase2.subsection1.content}}}</p>
+                  <h5></h5>
+                  <p></p>
                 </div>
 
                 <div class="col-6">
 
-                  <h5>{{usecase2.subsection2.title}}</h5>
-                  <p>{{{usecase2.subsection2.content}}}</p>
+                  <h5></h5>
+                  <p></p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-6 text-center order-md-first">
-              <img class="mr-40" src="{{usecase2.img}}" alt="...">
+              <img class="mr-40" src="..&#x2F;assets&#x2F;img&#x2F;cases&#x2F;performance.png" alt="...">
             </div>
 
 
@@ -243,8 +337,8 @@
           <div class="row gap-y align-items-center">
 
             <div class="col-md-4 mx-auto">
-              <h2>{{usecase3.title}}</h2>
-              <p class="lead">{{usecase3.content}}</p>
+              <h2></h2>
+              <p class="lead"></p>
 
               <div class="rating mb-2 mt-8">
                 <label class="fa fa-star"></label>
@@ -254,7 +348,7 @@
                 <label class="fa fa-star"></label>
               </div>
 
-              <p class="text-quoted"><h5>{{usecase3.quote}}</h5></p>
+              <p class="text-quoted"><h5></h5></p>
                <div class="media align-items-center">
                 <img class="avatar avatar-sm mr-4" src="../assets/img/avatar/4.jpg" alt="...">
                 <div class="media-body lh-1">
@@ -266,13 +360,12 @@
 
 
             <div class="col-md-6 mt-7 mt-md-0">
-              <img src="{{usecase3.img}}" alt="..." data-aos="fade-left" class="aos-init">
+              <img src="..&#x2F;assets&#x2F;img&#x2F;cases&#x2F;measuring.png" alt="..." data-aos="fade-left" class="aos-init">
             </div>
 
           </div>
         </div>
       </section>-->
-      {{ /audience_specific }}
       <section class="section text-white" style="background-color: #363636">
         <div class="container">
           <div class="row gap-y">
@@ -321,14 +414,13 @@
       </section>
       <!-- Use Case 4,5,6 -->
       <!-- http://thetheme.io/thesaas/block/feature.html -->
-      {{ #generic }}
       <section class="section">
         <div class="container">
           <header class="section-header">
             <small>What are we about?</small>
-            <h2>{{header}}</h2>
+            <h2>Achieve Self-Reliance</h2>
             <hr>
-            <p class="lead">{{description}}</p>
+            <p class="lead">Growing Data Analytics at the speed of your business makes non-incremental improvements challenging. This is where outside help is usually brought in:</p>
           </header>
           <div class="row align-items-center">
 
@@ -342,8 +434,8 @@
                   </div>
 
                   <div class="step-content">
-                    <h6><strong>{{resource0.title}}</strong></h6>
-                    <p>{{{resource0.content}}}</p>
+                    <h6><strong>Helping you do more (or less)</strong></h6>
+                    <p>Our clients approach for different reasons. Some stumble upon us while researching answers. Others are always on the lookout for an extra advantage over their competitors. Regardless, we've designed the process to accommodate all of this. Whether you are a <b>technical or a non-technical</b>, and whether you already have your data stack or are in the process of shopping for a software vendor and need help.</p>
                   </div>
                 </li>
 
@@ -353,8 +445,8 @@
                   </div>
 
                   <div class="step-content">
-                    <h6><strong>{{resource1.title}}</strong></h6>
-                    <p>{{{resource1.content}}}</p>
+                    <h6><strong>Recognizing your always changing needs</strong></h6>
+                    <p>Traditional services approach has been designed for the era of slow multi-year projects. We've designed our process around rapidly changing priorities. At the core of our proposition is a promise to <b>automate</b> our work whenever possible, so that the end result is <u>maintainable</u> and can be carried over to your existing workflows.</p>
                   </div>
                 </li>
 
@@ -364,8 +456,8 @@
                   </div>
 
                   <div class="step-content">
-                    <h6><strong>{{resource2.title}}</strong></h6>
-                    <p>{{{resource2.content}}}</p>
+                    <h6><strong>Like software without the software&#39;s learning curve</strong></h6>
+                    <p>Successful teams today are managing dozens dozens of various software tools. We recognize this. We don't offer a tool--we offer a service. As part of our work, we handle the tools, so that you can focus on investing your time into what matters the most.</p>
                   </div>
                 </li>
               </ol>
@@ -415,7 +507,6 @@
 
         </div>
       </section>
-      {{ /generic }}
       <!-- http://thetheme.io/thesaas/block/pricing.html -->
       <section class="section bg-gray" id="pricing">
         <div class="container">
@@ -486,12 +577,12 @@
                 </div>
                 <div class="card">
                   <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-2" aria-expanded="false" class="collapsed">Do we need to be technical?</a>
+                    <a data-toggle="collapse" href="#collapse-1-2" aria-expanded="false" class="collapsed">Can we just pay someone hourly until we figure out the scope?</a>
                   </h5>
 
                   <div id="collapse-1-2" class="collapse" data-parent="#accordion-1" style="">
                     <div class="card-body">
-                      No, and in fact, many (not all) of our clients are not technical.
+                      Unfortunately we don't do hourly. The people we work with are highly prized technical experts. They require continuation of work to be most effective. Hourly contracts typically lead to low quality of effort and deliverables.
                     </div>
                   </div>
                 </div>
@@ -503,72 +594,6 @@
                   <div id="collapse-1-3" class="collapse" data-parent="#accordion-1" style="">
                     <div class="card-body">
                       Yes. Payments are prorated on monthly basis.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-4" aria-expanded="false" class="collapsed">How will I be billed?</a>
-                  </h5>
-
-                  <div id="collapse-1-4" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                      We are pretty flexible and accept credit cards as well as electronic wire.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-5" aria-expanded="false" class="collapsed">What size data do you normally work with?</a>
-                  </h5>
-
-                  <div id="collapse-1-5" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                      There is no normal. And size does not determine the complexity. But we've worked with Petabyte datasets (of weekly data) in a multi-cluster environment as well as very tiny datasets.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-6" aria-expanded="false" class="collapsed">How are you different?</a>
-                  </h5>
-
-                  <div id="collapse-1-6" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                     Buying our subscription is like buying a reliable software that just works. That's our goal.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-7" aria-expanded="false" class="collapsed">What's your experience?</a>
-                  </h5>
-
-                  <div id="collapse-1-7" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                     We come from leading tech firms in Silicon Valley and have worked with Data before it became sexy.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-8" aria-expanded="false" class="collapsed">How will you clear IT security procedures at my organization?</a>
-                  </h5>
-
-                  <div id="collapse-1-8" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                     Typically we do this with your help. That said, we've seen many scenarious by now--typically we can work something out.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h5 class="card-title">
-                    <a data-toggle="collapse" href="#collapse-1-9" aria-expanded="false" class="collapsed">I am not sure we can accept a new vendor right now. What do I do?</a>
-                  </h5>
-
-                  <div id="collapse-1-9" class="collapse" data-parent="#accordion-1" style="">
-                    <div class="card-body">
-                     Please contact us to learn how we typically approach this.
                     </div>
                   </div>
                 </div>
