@@ -105,7 +105,18 @@ $(function() {
   | them in this file.
   |
   */
-  if (page.defaults.quora){
+  function getUrlParam(parameter, defaultvalue){
+      var urlparameter = defaultvalue;
+      if(window.location.href.indexOf(parameter) > -1){
+          urlparameter = getUrlVars()[parameter];
+          }
+      return urlparameter;
+  }
+  if (getUrlParam("utm_campaign",null) == 'ignore'){
+    console.log("utm_campaign = ignore");
+  }
+
+  if (getUrlParam("utm_campaign",null) != 'ignore' && page.defaults.quora){
     !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
     qp('init', page.defaults.quora);
     qp('track', 'ViewContent');
@@ -134,12 +145,12 @@ $(function() {
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load(page.defaults.driftAppId);
   }
-  if (page.defaults.olark){
+  if (getUrlParam("utm_campaign",null) != 'ignore' && page.defaults.olark){
     (function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
     /* custom configuration goes here (www.olark.com/documentation) */
     olark.identify(page.defaults.olark);
   }
-  if (page.defaults.adroll_adv_id && page.defaults.adroll_pix_id){
+  if (getUrlParam("utm_campaign",null) != 'ignore' && page.defaults.adroll_adv_id && page.defaults.adroll_pix_id){
     var adroll_adv_id = page.defaults.adroll_adv_id;
     var adroll_pix_id = page.defaults.adroll_pix_id;
     (function () {
@@ -166,7 +177,7 @@ $(function() {
         });
     });
   }
-  if (page.defaults.facebook){
+  if (getUrlParam("utm_campaign",null) != 'ignore' && page.defaults.facebook){
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -184,6 +195,7 @@ $(function() {
           tracked = true;
           fbq('track', 'InitiateCheckout', {
             value: 1,
+            currency: 'USD'
           });
         }
       });
@@ -192,6 +204,7 @@ $(function() {
           tracked = true;
           fbq('track', 'InitiateCheckout', {
             value: 1,
+            currency: 'USD'
           });
         }
       });
@@ -199,6 +212,7 @@ $(function() {
         if (!tracked){
           fbq('track', 'InitiateCheckout', {
             value: 0.5,
+            currency: 'USD'
           });
         }
       });
