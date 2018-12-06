@@ -126,7 +126,7 @@ $(function() {
 
   if (getUrlParam("download_report",null) != null){
     setTimeout(function(){
-     window.open('https://www.g2crowd.com/reports/grid-report-for-business-intelligence-platforms-spring-2018', '_blank');
+     window.open('https://www.g2crowd.com/reports/grid-report-for-business-intelligence-platforms-spring-2018?featured=looker&gated_consumer=0723dde6-22e5-49f8-a58f-97c6a1868c47', '_blank');
       },2000)
   }
 
