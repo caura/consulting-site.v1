@@ -123,6 +123,13 @@ $(function() {
     console.log("utm_campaign = ignore");
   }
 
+
+  if (getUrlParam("download_report",null) != null){
+    setTimeout(function(){
+     window.open('https://www.g2crowd.com/reports/grid-report-for-business-intelligence-platforms-spring-2018', '_blank');
+      },2000)
+  }
+
   if (getUrlParam("utm_campaign",null) != 'ignore' && page.defaults.quora){
     !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
     qp('init', page.defaults.quora);
