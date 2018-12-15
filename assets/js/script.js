@@ -87,8 +87,8 @@ $(function() {
     adroll_pix_id: "XWPWGN7J5NE4BEPJWKZMOD",
     facebook: "1972078333040303",
     quora: "75c9068d8bad4384964e471ca3905245",
-    heap: "4100355916"
-
+    heap: "4100355916",
+    twitter: "nvmnw"
   });
 
 
@@ -232,6 +232,15 @@ $(function() {
       });
     });
   }
+  if (page.defaults.twitter){
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init',page.defaults.twitter);
+      twq('track','PageView');
+    }
+
   if (page.defaults.heap){
     window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
     heap.load(page.defaults.heap);
